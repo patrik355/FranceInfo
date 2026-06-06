@@ -32,3 +32,15 @@ Web portal izrađen u PHP-u i MySQL-u kao projekt za kolegije Programiranje web 
 5. Otvoriti:
 
 http://localhost/FranceInfo/index.php
+
+## Testni korisnici
+
+Administrator
+
+Korisničko ime: admin
+Lozinka: admin
+
+Korisnik
+
+Korisničko ime: korisnik
+Lozinka: 123
