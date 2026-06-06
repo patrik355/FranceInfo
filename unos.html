@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administracija</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        franceinfo<span>:</span>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.php">home</a></li>
+        <li><a href="kategorija.php?kategorija=elections">elections</a></li>
+        <li><a href="kategorija.php?kategorija=lesjt">les jt</a></li>
+        <li><a href="vrijeme.php">vrijeme</a></li>
+        <li><a href="unos.html">nova vijest</a></li>
+        <li><a href="administrator.php">upravljanje</a></li>
+        <li><a href="logout.php">odjava</a></li>
+    </ul>
+</nav>
+<main class="form-container">
+    <h1>Administracija vijesti</h1>
+    <form action="skripta.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Naslov vijesti</label>
+            <input type="text" name="naslov" required>
+        </div>
+        <div class="form-group">
+            <label>Kratki sažetak</label>
+            <textarea name="sazetak" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Tekst vijesti</label>
+            <textarea name="tekst" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Kategorija</label>
+            <select name="kategorija">
+                <option value="elections">Elections</option>
+                <option value="lesjt">Les JT</option>
+            </select>
+        </div>
+        <div class="form-group">
+        <label>Slika vijesti</label>
+        <input type="file"
+           name="slika"
+           accept="image/*">
+
+        </div>
+        <div class="checkbox-group">
+            <label for="arhiva">
+                Prikaži vijest
+            </label>
+            <input type="checkbox"
+                id="arhiva"
+                name="arhiva"
+                value="0">
+        </div>
+        <button type="submit" class="submit-btn">
+            Pošalji
+        </button>
+    </form>
+</main>
+<footer>
+    <p>france.tv</p>
+</footer>
+</body>
+</html>
