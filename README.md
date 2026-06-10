@@ -23,6 +23,10 @@ Web portal izrađen u PHP-u i MySQL-u kao projekt za kolegije Programiranje web 
 * REST API (Open-Meteo)
 * JSON
 
+## Video demonstracije projekta
+
+YouTube - https://youtu.be/GeV02jCDghg
+
 ## Pokretanje projekta
 
 1. Kopirati projekt u `htdocs` direktorij XAMPP-a.
